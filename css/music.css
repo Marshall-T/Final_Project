@@ -1,26 +1,27 @@
 body {
-  padding-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 50px;
   background-image: url("../images/back.music.jpg");
   background-size: 100%;
   background-repeat: repeat-y ;  
   color: #FFFFFF;
-  padding-bottom: 50px;
 }
 
-.starter-template {
+.home-title {
   padding: 40px 15px;
   text-align: center;
 }
-
+/*
+.search-header{
+  font-size: 18px;
+}
+*/
 .foot
 {
   padding-top: 10px;
   color: #FFFFFF;
 }
 
-.search-header{
-  font-size: 18px;
-}
 /*
 .table table-striped {
   background-color: transparent;

@@ -13,4 +13,5 @@ document.getElementById("search").onclick = function(e)
     }
     var code = document.getElementById("target");
     code.innerHTML = '<h3 id="target">' + sStrg + '</h3>';
+    return sStrg;
 }

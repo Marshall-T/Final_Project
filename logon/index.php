@@ -26,10 +26,9 @@
 
     <!-- Custom styles for this template -->
     <link href="../css/logon.css" rel="stylesheet">
-    <link href="../css/music.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+    <!--[if lt IE 9]
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -61,7 +60,7 @@
 
     <div class="container">
 
-      <div class="starter-template">
+      <div class="home-title">
         
         <h1>Music Store</h1>
         <p class="lead">Your one stop shop for all your music needs.</p>
@@ -92,11 +91,10 @@
       </form>
 
     </div> <!-- /container -->
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script type="text/JavaScript" src="logon.js"></script>
     <br><br><br><br><br>  <!-- needs to be a css block size or margin -->
+    <script type="text/JavaScript" src="logon.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>  </body>
   </body>
 
   <footer class=foot>

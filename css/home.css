@@ -1,11 +1,12 @@
 body {
-  padding-top: 50px;
+  padding-top: 40px;
   background-image: url("../images/back.home.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   color: #FFFFFF;
 }
-.starter-template {
+
+.home-title {
   padding: 40px 15px;
   text-align: center;
 }

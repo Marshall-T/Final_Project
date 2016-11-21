@@ -9,29 +9,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
     <link rel="icon" href="../images/a2j.gif">
-
     <title>Music Logon</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles for this page -->
     <link href="../css/music.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -76,7 +65,7 @@
 ?>
 
     <div class="container">
-      <div class="starter-template">
+      <div class="home-title">
         <h1>Music Store</h1>
         <p class="lead">Your one stop shop for all your music needs.</p>
       </div>
@@ -84,6 +73,7 @@
 <!--      <div class="page-header"> -->
     <div class="container">
 <?
+    // display search input on the page - trying to pass target to js & vise vesa - unsuccessful
     echo '<br>';
     echo '<label for="search" class="sr-only" >Search</label>';
     echo '<input type="string" id="aSearch" class="form-control" name="target" placeholder="Artist name" autofocus>';
@@ -110,7 +100,7 @@
             <tbody>
               <tr>
 <?
-//      still needs a trigger to execute the search
+//      still needs a trigger to execute the "search" / filter
               $count = 0;
               $f = fopen("music-data.txt", r);  // change to sql input
                 while ($title = fgets($f)) {
@@ -128,12 +118,15 @@
       </div>
 
     </div><!-- /.container -->
-  <br><br>  <!-- needs to be a css block size or margin -->
-  <script type="text/JavaScript" src="Music.js"></script>
+    <br><br>  <!-- needs to be a css block size or margin -->
+    <script type="text/JavaScript" src="Music.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 
   <footer class=foot>
     <p>Back ground image courtsey of: <a href=http://shushi168.com/music-pics.html> http://shushi168.com/music-pics.html</a></p>
-    <p>Still a work in progress.  The file input is to be replace by sql input.  The "search" is actually just a filter.</p>      
+    <p>Still a work in progress.  The file input is to be replace by sql input.  The "search" is actually just a filter (currently disabled).</p>      
   </footer>
+
 </html>
