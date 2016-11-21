@@ -14,7 +14,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="a2j.gif">
+    <link rel="icon" href="images/a2j.gif">
 
     <title>Music Store</title>
 
@@ -25,7 +25,7 @@
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/starter-template.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -47,13 +47,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Music Store</a>
+          <a class="navbar-brand" href="index.php">Music Store
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="logon/index.html">Logon</a></li>
-            <li><a href="tables/tables.html">Music</a></li>
+            <li class="active"><a href="index.php">Home</a></li>
+            <li><a href="logon/index.php">Logon</a></li>
+            <li><a href="tables/tables.php">Music</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -66,7 +66,6 @@
         <h1>Music Store</h1>
         <p class="lead">Your one stop shop for all your music needs.</p>
       </div>
-
     </div><!-- /.container -->
 
 
@@ -78,5 +77,14 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  <!-- needs to be a css block size or margin -->
+
   </body>
+
+  <footer class=foot>
+    
+    <p>Back ground image courtsey of: <a href=http://shushi168.com/music-pics.html> http://shushi168.com/music-pics.html</a></p>
+    <p>Still a work in progress.  The file input is to be replace by sql input.</p>      
+
+  </footer>
 </html>
