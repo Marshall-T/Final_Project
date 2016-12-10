@@ -50,13 +50,12 @@
     </nav>
 
     <div class="container">
-
       <div class="home-title">
         <h1>Music Store</h1>
         <p class="lead">Your one stop shop for all your music needs.</p>
       </div>
     </div><!-- /.container -->
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  <!-- needs to be a css block size or margin -->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  <!-- needs to be a css block size or margin -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

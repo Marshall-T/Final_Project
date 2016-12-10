@@ -59,18 +59,14 @@
     </nav>
 
     <div class="container">
-
       <div class="home-title">
-        
         <h1>Music Store</h1>
         <p class="lead">Your one stop shop for all your music needs.</p>
-
       </div>
-
     </div><!-- /.container -->
 
       <form class="form-signin">
-        <h2 class="form-signin-heading">Music Store logon </h2>
+        <h3 class="form-signin-heading">Music Store logon </h3>
         For testing email = jack@gmail.net<br>
         <label for="inputEmail" class="sr-only" >Email address</label>
         <input type="email" id="inputEmail" class="form-control" name="anEmail" placeholder="Email address" required autofocus>
@@ -91,7 +87,7 @@
       </form>
 
     </div> <!-- /container -->
-    <br><br><br><br><br>  <!-- needs to be a css block size or margin -->
+    <br><br><br><br><br><br><br>  <!-- needs to be a css block size or margin -->
     <script type="text/JavaScript" src="logon.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>  </body>

@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="../images/a2j.gif">
-    <title>Music Logon</title>
+    <title>Music List</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -72,6 +72,7 @@
     </div>
 <!--      <div class="page-header"> -->
     <div class="container">
+    <h3>Enter a search target</h3>
 <?
     // display search input on the page - trying to pass target to js & vise vesa - unsuccessful
     echo '<br>';
@@ -83,7 +84,7 @@
     $target = '<br>';
     echo ' Search results for: ';
     echo ' <div id="target" class="search-header">';
-    echo '  <h3><br></h3>';
+    echo '  <h4><br></h4>';
     echo ' </div>';
 ?>
       <div class="row">
@@ -111,7 +112,42 @@
                     TableRows ($count, $title, $artist, $price);
                   }
                 }
-?>
+
+/*                
+                $host = "localhost";
+                $database = "../MusicList.sql";
+                $user = "mjtshopper@gmail.com";
+                $pass = "chevyII327";
+*/
+                require_once ('../config.php');
+/*                echo ' host = ' . DBHOST;
+                echo ' user = ' . DBUSER;
+                echo ' pass = ' . DBPASS;
+                echo ' name = ' . DBNAME;
+*/                echo '<br>';
+                echo getcwd () . DBNAME;
+                echo '<br> pass = ' . DBPASS;
+        echo '<br>';
+                try {
+                  
+                  $connection = MySQLi_connect(DBHOST, DBUSER, DBPASS, DBNAME);
+  /*                
+                  $error = mysqli_connect_error();
+                  if ($error != null) {
+                    $output = "<p>Database connection Error</p>" . $error;
+                    exit (output);
+                  }
+                  
+                  $sql = "select * from MusicList orderby title;";
+                  $result = "mysqli_query($connection, $sql)";
+                  MySQLi_close($connection);
+  */
+
+                }
+                catch (Exception $ex) {
+                  echo Message.Show("No connection" + $ex);
+                }
+ ?>
             </tbody>
           </table>
         </div>

@@ -12,6 +12,6 @@ document.getElementById("search").onclick = function(e)
         sStrg = "<br>";
     }
     var code = document.getElementById("target");
-    code.innerHTML = '<h3 id="target">' + sStrg + '</h3>';
+    code.innerHTML = '<h4 id="target">' + sStrg + '</h4>';
     return sStrg;
 }
