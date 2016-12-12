@@ -140,8 +140,9 @@
                   
                   $sql = "select * from MusicList orderby title;";
                   $result = "mysqli_query($connection, $sql)";
-                  MySQLi_close($connection);
   */
+                  MySQLi_close($connection);
+
 
                 }
                 catch (Exception $ex) {

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<resultset statement="select id, title, artist, price
+	from musiclist
+LIMIT 0, 1000
+"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<row>
+		<field name="id">1</field>
+		<field name="title">Harmony</field>
+		<field name="artist">Ray Conniff</field>
+		<field name="price">5.95</field>
+	</row>
+
+	<row>
+		<field name="id">2</field>
+		<field name="title">Ring of Fire</field>
+		<field name="artist">Johnny Cash</field>
+		<field name="price">1</field>
+	</row>
+
+	<row>
+		<field name="id">3</field>
+		<field name="title">Invisible Tears</field>
+		<field name="artist">Ray Conniff</field>
+		<field name="price">0.5</field>
+	</row>
+
+	<row>
+		<field name="id">4</field>
+		<field name="title">Don&#39;t Be Cruel</field>
+		<field name="artist">Elvis Presley</field>
+		<field name="price">1.25</field>
+	</row>
+
+	<row>
+		<field name="id">5</field>
+		<field name="title">Turn Around Look At Me</field>
+		<field name="artist">Ray Conniff</field>
+		<field name="price">0.75</field>
+	</row>
+
+	<row>
+		<field name="id">6</field>
+		<field name="title">I Walk The Line</field>
+		<field name="artist">Johnny Cash</field>
+		<field name="price">1</field>
+	</row>
+</resultset>
