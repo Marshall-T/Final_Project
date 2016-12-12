@@ -125,28 +125,33 @@
                 echo ' pass = ' . DBPASS;
                 echo ' name = ' . DBNAME;
 */                echo '<br>';
-                echo getcwd () . DBNAME;
-                echo '<br> pass = ' . DBPASS;
-        echo '<br>';
+//                echo getcwd () . DBNAME;
+//                echo '<br> pass = ' . DBPASS;
+//                echo '<br>';
                 try {
-                  
-                  $connection = MySQLi_connect(DBHOST, DBUSER, DBPASS, DBNAME);
-  /*                
+
+//                  $connection = MySQLi_connect(DBHOST, DBUSER, DBPASS, DBNAME);
+
+                    $connectStr = "mysqli:host=localhost;dbname=MusicList";
+                    $pdo = new PDO($connectStr, DBUSER, DBPASS);
+//                  $connection = MySQLi_connect(DBHOST, DBUSER, DBPASS, DBNAME);
+
                   $error = mysqli_connect_error();
+
                   if ($error != null) {
                     $output = "<p>Database connection Error</p>" . $error;
                     exit (output);
                   }
                   
-                  $sql = "select * from MusicList orderby title;";
-                  $result = "mysqli_query($connection, $sql)";
-  */
+//                  $sql = "select * from MusicList orderby title";
+  //                $result = "mysqli_query($connection, $sql)";
+
                   MySQLi_close($connection);
 
 
                 }
                 catch (Exception $ex) {
-                  echo Message.Show("No connection" + $ex);
+                  echo $error . " < Errror > " . $ex;
                 }
  ?>
             </tbody>
