@@ -136,18 +136,16 @@
                     $pdo = new PDO($connectStr, DBUSER, DBPASS);
 //                  $connection = MySQLi_connect(DBHOST, DBUSER, DBPASS, DBNAME);
 
-                  $error = mysqli_connect_error();
-
-                  if ($error != null) {
-                    $output = "<p>Database connection Error</p>" . $error;
-                    exit (output);
-                  }
+                    $error = mysqli_connect_error();
+                    if ($error != null) {
+                      $output = "<p>Database connection Error</p>" . $error;
+                      exit (output);
+                    }
                   
 //                  $sql = "select * from MusicList orderby title";
   //                $result = "mysqli_query($connection, $sql)";
 
-                  MySQLi_close($connection);
-
+                    MySQLi_close($connection);
 
                 }
                 catch (Exception $ex) {
